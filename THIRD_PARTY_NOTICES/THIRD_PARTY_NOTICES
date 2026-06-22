@@ -1,0 +1,81 @@
+This project uses third-party components included or used at runtime.
+
+Each component retains its original license terms.
+
+------------------------------------------------------------
+1. Wine (AppImage)
+------------------------------------------------------------
+
+Project location:
+./WINE/WINE.AppImage
+
+Source:
+https://github.com/pkgforge-dev/wine-AppImage
+
+License:
+MIT (AppImage packaging layer)
+
+Note:
+Wine inside the AppImage may include components under different licenses (such as LGPL), which remain valid under their original terms.
+
+Usage:
+Used as a compatibility layer for running Windows applications.
+
+------------------------------------------------------------
+2. Winetricks
+------------------------------------------------------------
+
+Included inside the Wine AppImage.
+
+License:
+LGPL-2.1+
+
+Usage:
+Used at runtime to configure dependencies inside Wine prefixes.
+
+------------------------------------------------------------
+3. DXVK
+------------------------------------------------------------
+
+Not included in the AppImage.
+
+Location:
+Downloaded automatically at runtime and installed into the Wine prefix.
+
+Source:
+https://github.com/doitsujin/dxvk
+
+License:
+zlib/libpng license
+
+------------------------------------------------------------
+4. VKD3D-Proton
+------------------------------------------------------------
+
+Not included in the AppImage.
+
+Location:
+Downloaded automatically at runtime and installed into the Wine prefix.
+
+Source:
+https://github.com/HansKristian-Work/vkd3d-proton
+
+License:
+LGPL-2.1-or-later
+
+------------------------------------------------------------
+5. Main project
+------------------------------------------------------------
+
+Name/pseudonym: Riquer777
+
+License:
+GPLv3
+
+Source repository:
+https://github.com/Riquer777/Imawine
+------------------------------------------------------------
+
+Summary:
+This project uses the Wine AppImage as a runtime base and automatically installs additional dependencies into Wine prefixes when required.
+All third-party components retain their original licenses.
