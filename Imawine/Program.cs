@@ -659,20 +659,20 @@ public static class WineKit
 
         var process = new Process();
 
-        // 👉 SEMPRE o AppImage primeiro
+ 
         process.StartInfo.FileName = wineAppImage;
 
-        // prefix
+ 
         process.StartInfo.Environment["WINEPREFIX"] = winePrefix;
 
         process.StartInfo.UseShellExecute = false;
         process.StartInfo.RedirectStandardOutput = true;
         process.StartInfo.RedirectStandardError = true;
 
-        // 👉 comando interno do AppImage
+
         process.StartInfo.ArgumentList.Add(command);
 
-        // args extras (dxvk etc)
+
         foreach (var a in args)
             process.StartInfo.ArgumentList.Add(a);
 
