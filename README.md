@@ -1,3 +1,5 @@
+#Just a heads-up: Imawine won't receive updates until late 2026. Linux Mint uses MangoHud 6.x (from Ubuntu LTS 24), and the new Wine 11.11 is buggy with MangoHud 6.x; there are rumors that this is fixed in MangoHud 8.x, but until then, there will be no updates to this repo.
+
 # Imawine
 
 Imawine is a simple launcher for running Windows applications on Linux using Wine.
