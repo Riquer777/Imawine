@@ -5,5 +5,61 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Imawine.MainWindow"
         Title="Imawine">
-    Welcome to Avalonia!
+    <Grid RowDefinitions="*,Auto">
+        <Grid Grid.Row="0">
+            <!--Rest-->
+            <Grid ColumnDefinitions="2*,8*">
+                <ScrollViewer Grid.Column="0" VerticalScrollBarVisibility="Auto">
+                    <ScrollViewer.Styles>
+                        <Style Selector="Button">
+                            <Setter Property="Padding" Value="16,12"/>
+                            <Setter Property="MinHeight" Value="46"/>
+                            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+                        </Style>
+                    </ScrollViewer.Styles>
+
+                    <StackPanel Spacing="8">
+                        <Button Content="Item 1"/>
+                        <Button Content="Item 2"/>
+                        <Button Content="Item 3"/>
+                        <Button Content="Item 4"/>
+                        <Button Content="Item 5"/>
+                        <Button Content="Item 6"/>
+                        <Button Content="Item 7"/>
+                        <Button Content="Item 8"/>
+                        <Button Content="Item 9"/>
+                        <Button Content="Item 10"/>
+                        <Button Content="Item 1"/>
+                        <Button Content="Item 2"/>
+                        <Button Content="Item 3"/>
+                        <Button Content="Item 4"/>
+                        <Button Content="Item 5"/>
+                        <Button Content="Item 6"/>
+                        <Button Content="Item 7"/>
+                        <Button Content="Item 8"/>
+                        <Button Content="Item 9"/>
+                        <Button Content="Item 10"/>
+                        <Button Content="Item 1"/>
+                        <Button Content="Item 2"/>
+                        <Button Content="Item 3"/>
+                        <Button Content="Item 4"/>
+                        <Button Content="Item 5"/>
+                        <Button Content="Item 6"/>
+                        <Button Content="Item 7"/>
+                        <Button Content="Item 8"/>
+                        <Button Content="Item 9"/>
+                        <Button Content="Item 10"/>
+                    </StackPanel>
+                </ScrollViewer>
+                <Button Grid.Column="1" Content="Rest of space"/>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="1" >
+            <!--Footer-->
+            <TextBlock Text="WIP – Visual concept for the application"></TextBlock>
+            
+        </Grid>
+    </Grid>
+    
+    
 </Window>

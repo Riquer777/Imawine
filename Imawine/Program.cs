@@ -5,20 +5,27 @@ namespace Imawine;
 
 class Program
 {
-    // Initialization code. Don't use any Avalonia, third-party APIs or any
-    // SynchronizationContext-reliant code before AppMain is called: things aren't initialized
-    // yet and stuff might break.
     [STAThread]
     public static void Main(string[] args) => BuildAvaloniaApp()
         .StartWithClassicDesktopLifetime(args);
 
-    // Avalonia configuration, don't remove; also used by visual designer.
     public static AppBuilder BuildAvaloniaApp()
-        => AppBuilder.Configure<App>()
-            .UsePlatformDetect()
+    {
+        var builder = AppBuilder.Configure<App>()
+            .UsePlatformDetect();
+
+        if (OperatingSystem.IsLinux())
+        {
+            //builder = builder.UseWaylandWithFallback();
+        }
+
+        return builder
+            .UseSkia()
+            .UseHarfBuzz()
 #if DEBUG
             .WithDeveloperTools()
 #endif
             .WithInterFont()
             .LogToTrace();
+    }
 }
